@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Pharmacy3.ProductPage">
+    <ContentPage.Content>
+        <StackLayout Margin="20">
+            <!--
+            <Label Text="Denumire categorie" FontSize="Medium"/>
+            <Editor Text="{Binding Denumire}" HeightRequest="40" />
+            <Label Text="Descriere categorie (optional)" FontSize="Medium"/>
+            <Editor Text="{Binding Descriere}" HeightRequest="40" />-->
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <!--<Button Text="Save" Clicked="OnSaveButton3Clicked" />
+                <Button Grid.Column="1" Text="Delete" Clicked="OnDeleteButton3Clicked"/>-->
+                <ListView Grid.Row="1" x:Name="listView" Margin="20" ItemSelected="OnListView3ItemSelected">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <TextCell Text="{Binding Denumire}" />
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

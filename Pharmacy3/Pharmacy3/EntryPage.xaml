@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Pharmacy3.EntryPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                   <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Label Text="Bine ati venit in Farmacie" FontSize="Large" HorizontalOptions="Center"/>
+                <Button Grid.Row="1" Text="Administrare categorii medicamente" Clicked="OnButtonClicked" FontSize="Large"/>
+                <Button Grid.Row="2" Text="Administrare producatori medicamente" Clicked="OnButton2Clicked" FontSize="Large"/>
+                <Button Grid.Row="3" Text="Administrare medicamente" Clicked="OnButton3Clicked" FontSize="Large"/>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
